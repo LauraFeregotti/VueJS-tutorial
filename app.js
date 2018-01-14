@@ -5,8 +5,8 @@ data: {
     job:'Ninja'
 },
 methods:{
-    greet:function(){
-        return'Good Morning'
+    greet:function(time){
+        return 'Good' + time + ' ' + this.name ;
     }
 }
 });
