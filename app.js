@@ -2,7 +2,9 @@ new Vue({
 el:'#vue-app',
 data: {
     name:'Shaun',
-    job:'Ninja'
+    job:'Ninja',
+    website:'http://www.thenetninja.com.uk',
+    websiteTag:'<a href="http://www.thenetninja.com.uk">The Net Ninja Website'
 },
 methods:{
     greet:function(time){
