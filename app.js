@@ -1,14 +1,15 @@
 new Vue({
 el:'#vue-app',
 data: {
-    name:'Shaun',
-    job:'Ninja',
-    website:'http://www.thenetninja.com.uk',
-    websiteTag:'<a href="http://www.thenetninja.com.uk">The Net Ninja Website'
+    age:25
 },
 methods:{
-    greet:function(time){
-        return 'Good' + time + ' ' + this.name ;
-    }
+  add:function(inc){
+this.age +=inc;
+  },
+  substract:function(dec){
+this.age -=dec;
+  }
+    
 }
 });

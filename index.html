@@ -3,16 +3,19 @@
 <head>
 <meta charset="utf-8">
 <title> VueJS prueba</title>
-<link href="styles.css" rel="stylesheet"/> 
+<link href="styles.css" rel="stylesheet" type="text/css"/> 
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </script>
 </head>
 <body>
     <div id="vue-app">
-        <h1>Data Binding</h1>
-    <a v-bind:href="website">The Net Ninja</a>
-    <input type="text" v-bind:value="job"/>
-    <p v-html="websiteTag"></p>
+        <h1>Events</h1>
+<button v-on:click="add(1)">Add a year</button>
+<button v-on:click="substract(1)">Subtract a year</button>
+<button v-on:dblclick="add(10)">Add 10 years</button>
+<button v-on:dblclick="substract(10)">Subtract 10 years</button>
+    <p>my age is {{age}}</p>
+    <div id="canvas"></div>
 </div>
 <script src="app.js"></script>
 </body>
