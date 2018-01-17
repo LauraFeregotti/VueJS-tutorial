@@ -6,18 +6,11 @@ data: {
     y:0
 },
 methods:{
-  add:function(inc){
-this.age +=inc;
-  },
-  substract:function(dec){
-this.age -=dec;
-  },
-  updateXY:function(event){
- this.x= event.offsetX;
- this.y= event.offsetY;
-  },
-click:function(){
-    alert('you clicked me')
+logName:function(){
+console.log('you entered your name');
+},
+logAge:function(){
+    console.log('you entered your age');   
 }
     
 }
