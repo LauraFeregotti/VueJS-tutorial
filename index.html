@@ -8,22 +8,14 @@
 </script>
 </head>
 <body>
-    <div id="vue-app">
-    <!-- bag image -->
-    <div id="bag" v-bind:class="{burst:ended}">
-
+    <div id="vue-app-one">
+      <h2>Vue app one</h2>
+      <greeting></greeting>
     </div>
-    <!-- bag health -->
-    <div id="bag-health">
-      <div v-bind:style="{width:health + '%'}"></div>
+    <div id="vue-app-two">
+      <h2>Vue app two</h2>
+      <greeting></greeting>
     </div>
-    <!-- game controls -->
-    <div id="controls">
-      <button v-on:click="punch" v-show="!ended">Punch</button>
-      <button v-on:click="restart">Restart</button>
-    </div>
-
-</div>
 <script src="app.js"></script>
 </body>
 
